@@ -23,7 +23,7 @@ int main() {
 
 	cout << endl;
 
-for(int i = 0; i < 100; i++) {
+for(int i = 0; i < 10; i++) {
 	
 	time_t timeO = time(NULL);
 	t = localtime(&timeO);
@@ -52,7 +52,7 @@ for(int i = 0; i < 100; i++) {
 
 	cout << "Today is: " << sday << ", the " << mday << " of " << smonth << " " << year << endl;
 	cout << "The time is: " << hours << ":" << (min < 10 ? "0" : "") << min << "." << sec << (pm ? "pm" : "am") << endl << endl;
-	usleep(1000000);
+	usleep(1000000); // one second
 }
 	return 0;
 }
