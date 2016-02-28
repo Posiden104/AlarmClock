@@ -10,3 +10,6 @@ nothing to commit, working directory clean
  4 files changed, 41 insertions(+)
  rewrite alarm (77%)
  create mode 100644 alarm.h
+[master 8862280] Make Alarm Clock
+ 3 files changed, 35 insertions(+)
+ rewrite alarm (86%)
