@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <unistd.h>
 
 #include "alarm.h"
 
@@ -20,5 +21,35 @@ int main() {
 	cout << "day of year " << t->tm_yday << endl;
 	cout << "daylight savings " << t->tm_isdst << endl;
 
+	cout << endl;
+
+for(int i = 0; i < 100; i++) {
+
+	int day = t->tm_wday;
+	int month = t->tm_mon;
+	int year = t->tm_year + 1900;
+	int hours = t->tm_hour;
+	int min = t->tm_min;
+	int sec = t->tm_sec;
+	int mday = t->tm_mday;
+	
+	string sday;
+	if(day == 0) sday = "Sunday";
+	else sday = "fucked up";
+
+	string smonth;
+	if(month == 1) smonth = "Feburary";
+	else smonth = "fucked up";
+
+	bool pm;
+	if(hours > 12) {
+		hours -= 12;
+		pm = true;
+	}
+
+	cout << "Today is: " << sday << ", the " << mday << " of " << smonth << " " << year << endl;
+	cout << "The time is: " << hours << ":" << min << "." << sec << (pm ? "pm" : "am") << endl << endl;
+	usleep(100);
+}
 	return 0;
 }

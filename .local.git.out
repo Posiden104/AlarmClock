@@ -6,3 +6,7 @@ nothing to commit, working directory clean
 [master bd262b6] Make Alarm Clock
  4 files changed, 4 insertions(+), 2 deletions(-)
  rename alarm.c => alarm.cpp (100%)
+[master abe7f16] Make Alarm Clock
+ 4 files changed, 41 insertions(+)
+ rewrite alarm (77%)
+ create mode 100644 alarm.h
