@@ -25,7 +25,7 @@ int main() {
 
 for(int i = 0; i < 100; i++) {
 
-	timeO = time(NULL);
+	t = localtime(&timeO);
 
 	int day = t->tm_wday;
 	int month = t->tm_mon;
