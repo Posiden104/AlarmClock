@@ -49,7 +49,7 @@ for(int i = 0; i < 100; i++) {
 
 	cout << "Today is: " << sday << ", the " << mday << " of " << smonth << " " << year << endl;
 	cout << "The time is: " << hours << ":" << (min < 10 ? "0" : "") << min << "." << sec << (pm ? "pm" : "am") << endl << endl;
-	usleep(10000000);
+	usleep(1000000);
 }
 	return 0;
 }
