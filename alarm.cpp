@@ -24,7 +24,8 @@ int main() {
 	cout << endl;
 
 for(int i = 0; i < 100; i++) {
-
+	
+	time_t timeO = time(NULL);
 	t = localtime(&timeO);
 
 	int day = t->tm_wday;
