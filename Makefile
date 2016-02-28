@@ -2,8 +2,8 @@ CXX = g++ -fPIC
 
 all: Alarm
 
-Alarm: alarm.c
-	g++ -g -o alarm alarm.c
+Alarm: alarm.cpp
+	g++ -g -o alarm alarm.cpp
 	git add -A  >> .local.git.out
 	git commit -a -m "Make Alarm Clock" >> .local.git.out
 
