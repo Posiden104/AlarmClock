@@ -25,6 +25,8 @@ int main() {
 
 for(int i = 0; i < 100; i++) {
 
+	timeO = time(NULL);
+
 	int day = t->tm_wday;
 	int month = t->tm_mon;
 	int year = t->tm_year + 1900;
